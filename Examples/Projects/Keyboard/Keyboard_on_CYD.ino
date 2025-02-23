@@ -33,8 +33,10 @@ Cursor behavior is not working properly after pressing backspace multiple times.
 
 TFT_eSPI tft = TFT_eSPI();
 
-// To be on the save side, please use 5V-3V level converters for the input pins to not fry your CYD inputs with 5V.
-// I tested my keyboard with 3.3V but it didn't work reliable.
+/*
+To be on the save side, please use 5V-3V level converters for the input pins to not fry your CYD inputs with 5V.
+I tested my keyboard with 3.3V but, as expected, it didn't work reliable.
+*/
 #define CLOCK_PIN 27
 #define DATA_PIN 22
 #define LED_PIN 2
